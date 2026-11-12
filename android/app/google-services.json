@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "906838845310",
+    "project_id": "siporagroups",
+    "storage_bucket": "siporagroups.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906838845310:android:e6a6a83fdb38385d7a352f",
+        "android_client_info": {
+          "package_name": "com.siporagroups.sipora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo6iNZ_lV8QQLhvymK1K_1qdYkZBMVlBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

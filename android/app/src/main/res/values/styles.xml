@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is off -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             the Flutter engine draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    
+    <!-- Theme applied to the Android Window as soon as the process has started -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- UCrop Theme - Fix for toolbar behind status bar -->
+    <style name="UCropTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Status bar settings -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#2D5016</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- CRITICAL: This makes the content fit below the status bar -->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Action bar style -->
+        <item name="android:actionBarStyle">@style/UCropActionBar</item>
+        <item name="android:actionBarSize">56dp</item>
+        <!-- Toolbar style -->
+        <item name="android:toolbarStyle">@style/UCropToolbar</item>
+    </style>
+
+    <!-- UCrop ActionBar Style -->
+    <style name="UCropActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">#2D5016</item>
+        <item name="android:titleTextStyle">@style/UCropTitleText</item>
+        <item name="android:displayOptions">showHome|showTitle</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_white</item>
+    </style>
+
+    <!-- UCrop Title Text Style -->
+    <style name="UCropTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- UCrop Toolbar Style -->
+    <style name="UCropToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#2D5016</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+    </style>
+</resources>

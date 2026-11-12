@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UCrop Theme for API 21+ -->
+    <style name="UCropTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Status bar settings -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#2D5016</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- CRITICAL: Content fits below system bars -->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Action bar style -->
+        <item name="android:actionBarStyle">@style/UCropActionBar</item>
+        <item name="android:actionBarSize">56dp</item>
+        <!-- Toolbar style -->
+        <item name="android:toolbarStyle">@style/UCropToolbar</item>
+        <!-- Status bar color (for API 21+) -->
+        <item name="android:statusBarColor">#2D5016</item>
+    </style>
+</resources>
